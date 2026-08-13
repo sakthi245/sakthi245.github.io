@@ -3,56 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="S Sakthi - AI and Data Science student, web developer, and freelance data specialist." />
-    <title>S Sakthi | AI, Data & Web Development</title>
+    <meta name="description" content="S Sakthi - AI and Data Science student, data specialist, and web developer." />
+    <title>S Sakthi | AI, Data &amp; Web Development</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <canvas id="particle-canvas" aria-hidden="true"></canvas>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="S Sakthi home"><span class="brand-mark">S.</span>SAKTHI<span>/</span></a>
-      <button class="menu-button" aria-label="Open navigation" aria-expanded="false"><i data-lucide="menu"></i></button>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#about">About</a><a href="#services">Services</a><a href="#skills">Skills</a><a href="#work">Focus</a>
-        <a class="nav-cta" href="#contact">Get in touch <i data-lucide="arrow-up-right"></i></a>
-      </nav>
+      <div class="header-inner">
+        <a class="wordmark" href="#top" aria-label="S Sakthi home">S<span>.</span>SAKTHI</a>
+        <p class="header-status"><i></i> Open for freelance</p>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#contact">Contact <i data-lucide="arrow-up-right"></i></a>
+        </nav>
+      </div>
     </header>
 
     <main id="top">
-      <section class="hero section-wrap">
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span></span> AVAILABLE FOR FREELANCE</p>
-          <p class="terminal-line"><b>$</b> whoami<span class="cursor"></span></p>
-          <h1>S Sakthi<span class="accent">.</span><br /><em>Data meets</em><br />design.</h1>
-          <p class="hero-description">AI &amp; Data Science student and web developer building useful systems, clean interfaces, and organized data for real-world work.</p>
-          <div class="hero-actions"><a class="button button-primary" href="#contact">Start a project <i data-lucide="arrow-up-right"></i></a><a class="button button-text" href="#work">Explore my work <i data-lucide="arrow-down"></i></a></div>
-          <div class="availability"><i></i> Currently open to freelance work</div>
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div class="hero-kicker"><span>01</span><p>AI &amp; DATA SCIENCE<br />WEB DEVELOPMENT</p></div>
+        <div class="hero-main">
+          <p class="mono-label">$ whoami</p>
+          <h1 id="hero-title">S Sakthi<span>.</span></h1>
+          <div class="hero-bottom"><p>Building clear digital work from messy data, useful ideas, and purposeful code.</p><a class="circle-link" href="#contact" aria-label="Contact S Sakthi"><i data-lucide="arrow-down-right"></i></a></div>
         </div>
-        <div class="hero-visual reveal delay-1">
-          <div class="image-frame"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85" alt="Developer working on a laptop" /><div class="frame-code">~/sakthi/portfolio</div></div>
-          <div class="floating-card card-stats"><span class="card-label">CURRENT TRACK</span><strong>AI<span>+</span>DS</strong><small>Second-year student</small></div>
-          <div class="floating-card card-data"><i data-lucide="database-zap"></i><div><span>WORKFLOW</span><strong>Data to interface</strong></div></div>
-          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        </div>
-        <div class="hero-scroll">SCROLL TO EXPLORE <span></span></div>
+        <aside class="hero-note"><p>SECOND-YEAR STUDENT<br />AI &amp; DATA SCIENCE</p><p>Member, Arohan<br />Entrepreneurship Cell</p></aside>
       </section>
 
-      <section class="ticker" aria-label="Skills"><div class="ticker-track"><span>AI &amp; MACHINE LEARNING</span><b>✦</b><span>DATA ANALYSIS</span><b>✦</b><span>WEB DEVELOPMENT</span><b>✦</b><span>DATA ENTRY</span><b>✦</b><span>AI &amp; MACHINE LEARNING</span><b>✦</b><span>DATA ANALYSIS</span><b>✦</b><span>WEB DEVELOPMENT</span><b>✦</b></div></section>
+      <section id="about" class="about shell section-rule">
+        <div class="section-label"><span>02</span><p>ABOUT<br />ME</p></div>
+        <div class="about-copy">
+          <h2>Data, logic, and<br /><em>the human side</em><br />of the screen.</h2>
+          <div class="about-text"><p>I'm <strong>S Sakthi</strong>, a second-year AI &amp; Data Science student working across data analysis, machine learning foundations, and web development.</p><p>I enjoy taking raw information and turning it into something people can use: organized datasets, clear reports, and thoughtful websites. Through Arohan, my college entrepreneurship cell, I also bring a practical product mindset to every brief.</p></div>
+        </div>
+      </section>
 
-      <section id="about" class="about section-wrap"><div class="about-label reveal"><p class="eyebrow"><span></span> ~/ABOUT</p><p>cat about.md</p></div><div class="about-body reveal delay-1"><h2>I work where data<br />becomes <em>useful.</em></h2><p>I'm <strong>S Sakthi</strong>, a second-year AI &amp; Data Science student who works across analysis, machine learning, and web development. I enjoy taking raw information and turning it into something clear: a trained model, a reliable dataset, or an interface people can actually use.</p><p>As an active member of <strong>Arohan, my college entrepreneurship cell</strong>, I bring a practical product mindset to technical work. I am available for focused freelance projects in data and web development.</p><div class="tags"><span>#ai-ml</span><span>#data-science</span><span>#web-development</span><span>#arohan</span></div></div></section>
+      <section id="services" class="services shell section-rule">
+        <div class="section-label"><span>03</span><p>SELECTED<br />CAPABILITIES</p></div>
+        <div class="capability-list">
+          <article class="capability"><div class="capability-index">01</div><div class="capability-title"><i data-lucide="table-properties"></i><h3>Data entry &amp;<br />management</h3></div><p>Accurate data entry, spreadsheet formatting, data cleaning, and records that are easy to work with.</p><a href="mailto:sakthi291008@gmail.com" aria-label="Email about data entry"><i data-lucide="arrow-up-right"></i></a></article>
+          <article class="capability"><div class="capability-index">02</div><div class="capability-title"><i data-lucide="chart-no-axes-combined"></i><h3>Data analysis &amp;<br />visualization</h3></div><p>Turning raw datasets into understandable analysis, summaries, and decision-ready visual reporting.</p><a href="mailto:sakthi291008@gmail.com" aria-label="Email about data analysis"><i data-lucide="arrow-up-right"></i></a></article>
+          <article class="capability"><div class="capability-index">03</div><div class="capability-title"><i data-lucide="braces"></i><h3>Web design &amp;<br />development</h3></div><p>Responsive websites and landing pages that communicate clearly on every screen size.</p><a href="mailto:sakthi291008@gmail.com" aria-label="Email about web development"><i data-lucide="arrow-up-right"></i></a></article>
+        </div>
+      </section>
 
-      <section id="services" class="services section-wrap"><div class="section-intro reveal"><p class="eyebrow"><span></span> ~/SERVICES</p><h2>Practical skills<br />for digital work.</h2></div><div class="service-list"><article class="service-row reveal"><div class="service-number">01</div><div class="service-icon amber"><i data-lucide="table-properties"></i></div><div><h3>Data Entry &amp; Management</h3><p>Accurate data entry, spreadsheet formatting, data cleaning, and structured records.</p></div><a href="#contact" aria-label="Ask about data entry"><i data-lucide="arrow-up-right"></i></a></article><article class="service-row reveal"><div class="service-number">02</div><div class="service-icon teal"><i data-lucide="chart-no-axes-combined"></i></div><div><h3>Data Analysis &amp; Visuals</h3><p>Cleaning, analyzing, and presenting data in a clear, decision-ready format.</p></div><a href="#contact" aria-label="Ask about data analysis"><i data-lucide="arrow-up-right"></i></a></article><article class="service-row reveal"><div class="service-number">03</div><div class="service-icon coral"><i data-lucide="panels-top-left"></i></div><div><h3>Web Design &amp; Development</h3><p>Clean, responsive portfolio sites, landing pages, and small business websites.</p></div><a href="#contact" aria-label="Ask about web development"><i data-lucide="arrow-up-right"></i></a></article></div></section>
+      <section id="skills" class="skills shell section-rule">
+        <div class="section-label"><span>04</span><p>TOOLKIT<br />&amp; SKILLS</p></div>
+        <div class="skill-grid">
+          <article><span class="skill-number">A</span><h3>AI &amp; ML</h3><p>Python<br />Scikit-learn<br />TensorFlow / PyTorch<br />Prompt engineering</p></article>
+          <article><span class="skill-number">B</span><h3>Data Science</h3><p>Pandas / NumPy<br />SQL<br />Data visualization<br />Statistical analysis</p></article>
+          <article><span class="skill-number">C</span><h3>Web Development</h3><p>HTML / CSS / JavaScript<br />Responsive design<br />Git &amp; GitHub<br />REST APIs</p></article>
+        </div>
+      </section>
 
-      <section id="skills" class="skills section-wrap"><div class="skills-heading reveal"><p class="eyebrow"><span></span> ~/SKILLS</p><p>ls -la ./toolkit/</p></div><div class="skills-grid"><article class="reveal"><i data-lucide="brain-circuit"></i><h3>AI &amp; ML</h3><p>Python · Scikit-learn<br />TensorFlow / PyTorch<br />Prompt engineering</p></article><article class="reveal delay-1"><i data-lucide="chart-spline"></i><h3>Data Science</h3><p>Pandas · NumPy · SQL<br />Data visualization<br />Statistical analysis</p></article><article class="reveal delay-2"><i data-lucide="code-2"></i><h3>Web Development</h3><p>HTML · CSS · JavaScript<br />Responsive design<br />Git · GitHub · REST APIs</p></article></div></section>
+      <section id="work" class="work shell section-rule">
+        <div class="work-heading"><div class="section-label"><span>05</span><p>WORK IN<br />PROGRESS</p></div><h2>Always building<br />the next <em>useful</em> thing.</h2></div>
+        <div class="work-grid">
+          <article class="work-card card-red"><div class="card-top"><span>IN PROGRESS / 01</span><i data-lucide="database"></i></div><h3>Data systems</h3><p>Exploring workflows for cleaner data collection, structured reporting, and sharper insights.</p><div class="card-tags"><span>Python</span><span>Pandas</span><span>SQL</span></div></article>
+          <article class="work-card card-dark"><div class="card-top"><span>IN PROGRESS / 02</span><i data-lucide="brain-circuit"></i></div><h3>Machine learning</h3><p>Developing practical foundations in model training, evaluation, and responsible use of AI.</p><div class="card-tags"><span>Scikit-learn</span><span>ML</span><span>AI</span></div></article>
+          <article class="work-card card-line"><div class="card-top"><span>IN PROGRESS / 03</span><i data-lucide="layout-template"></i></div><h3>Web experiences</h3><p>Designing fast, accessible websites that make ideas and services easier to understand.</p><div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
+        </div>
+      </section>
 
-      <section id="work" class="work section-wrap"><div class="work-heading reveal"><div><p class="eyebrow"><span></span> ~/CURRENT FOCUS</p><h2>Learning by<br /><em>building.</em></h2></div><p>A growing collection of work across AI, data, and the web. These are the areas I am actively developing and ready to apply to your project.</p></div><div class="project-grid"><article class="project project-main reveal"><div class="project-image dashboard-mockup"><div class="dash-nav"></div><div class="dash-sidebar"></div><div class="dash-content"><div class="dash-title"></div><div class="chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="dash-table"><i></i><i></i><i></i><i></i></div></div></div><div class="project-type">DATA SCIENCE</div><h3>Analysis &amp; Reporting</h3><p>Transforming spreadsheets and datasets into clear analysis and useful visual reporting.</p><div class="stack"><span>Python</span><span>Pandas</span><span>SQL</span></div></article><article class="project project-side reveal delay-1"><div class="project-image site-mockup"><div class="site-top"></div><div class="site-hero"><b>Make ideas<br />visible.</b><span></span></div><div class="site-bottom"><i></i><i></i><i></i></div></div><div class="project-type">WEB DEVELOPMENT</div><h3>Responsive Web Experiences</h3><p>Focused websites designed to communicate clearly and work on every device.</p><div class="stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article></div></section>
-
-      <section id="contact" class="contact"><div class="section-wrap contact-inner reveal"><p class="eyebrow"><span></span> ~/CONTACT</p><h2>Have an idea?<br /><em>Let's build it.</em></h2><div class="contact-links"><a class="contact-link" href="mailto:sakthi291008@gmail.com">sakthi291008@gmail.com <i data-lucide="arrow-up-right"></i></a><a class="social-link" href="https://github.com/sakthi245" target="_blank" rel="noopener">GitHub <i data-lucide="github"></i></a><a class="social-link" href="https://www.linkedin.com/in/s-sakthi-0167293b7" target="_blank" rel="noopener">LinkedIn <i data-lucide="linkedin"></i></a></div><div class="contact-bottom"><span>Based in India. Working worldwide.</span><a href="#top">BACK TO TOP <i data-lucide="arrow-up"></i></a></div></div></section>
+      <section id="contact" class="contact">
+        <div class="shell contact-inner">
+          <div class="section-label"><span>06</span><p>LET'S<br />CONNECT</p></div>
+          <div class="contact-main"><h2>Have a project<br />worth making?</h2><a class="contact-email" href="mailto:sakthi291008@gmail.com">sakthi291008@gmail.com <i data-lucide="arrow-up-right"></i></a></div>
+          <div class="contact-list"><a href="https://github.com/sakthi245" target="_blank" rel="noopener"><span>GitHub</span><b>sakthi245</b><i data-lucide="arrow-up-right"></i></a><a href="https://www.linkedin.com/in/s-sakthi-0167293b7" target="_blank" rel="noopener"><span>LinkedIn</span><b>S Sakthi</b><i data-lucide="arrow-up-right"></i></a><a href="https://www.fiverr.com/sakthi245/buying?source=avatar_menu_profile" target="_blank" rel="noopener"><span>Fiverr</span><b>sakthi245</b><i data-lucide="arrow-up-right"></i></a></div>
+        </div>
+      </section>
     </main>
-    <footer><span>© <span id="year"></span> S SAKTHI</span><span>HTML · CSS · JAVASCRIPT</span></footer>
+
+    <footer class="shell"><span>© <span id="year"></span> S SAKTHI</span><span>BUILT WITH HTML, CSS &amp; JS</span><a href="#top">BACK TO TOP <i data-lucide="arrow-up"></i></a></footer>
+    <nav class="mobile-nav" aria-label="Mobile navigation"><a href="#about"><i data-lucide="user-round"></i><span>About</span></a><a href="#services"><i data-lucide="layers-3"></i><span>Services</span></a><a href="#work"><i data-lucide="folder-kanban"></i><span>Work</span></a><a href="#contact"><i data-lucide="mail"></i><span>Contact</span></a></nav>
     <script src="https://unpkg.com/lucide@latest"></script><script src="script.js"></script>
   </body>
 </html>
