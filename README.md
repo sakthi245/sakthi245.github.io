@@ -1,19 +1,30 @@
-# Fiverr Portfolio
+# S Sakthi — 3D Interactive Portfolio
 
-Static portfolio website for S Sakthi's AI, data science, data entry, and web development freelance services.
+High-performance portfolio website for S Sakthi, showcasing AI & Data Science capabilities, data engineering, and modern web development.
 
-## Customize before publishing
+## Visual & 3D Features Added
 
-- Contact details are already configured for S Sakthi.
-- Add a Fiverr profile link to the navigation/contact section when it is available.
-- Replace the current focus cards with live project links and case studies as projects are completed.
+1. **Interactive 3D WebGL Core (Three.js)**:
+   - 3D Neural Network with responsive drag-to-rotate and cursor parallax.
+   - 3 Switchable 3D view modes: `NEURAL`, `LATTICE`, and `DATA CLOUD`.
+   - Real-time Euler Pitch & Yaw rotation telemetry HUD.
+2. **True 3D Perspective Tilt**:
+   - Multi-layer `preserve-3d` tilt on cards with dynamic cursor-following red specular light reflection.
+   - 3D element elevation (`translateZ`) for headings and badges.
+3. **Interactive Terminal**:
+   - Interactive `$ whoami` command query cycler in the hero section.
+4. **Interactive 3D Cursor**:
+   - Dual-layer dot and trailing spring ring with magnetic hover snapping.
+5. **Scroll Progress & Email Copy**:
+   - Top hairline scroll progress bar and one-click quick email clipboard copy.
 
-## Free hosting
+## Running Locally
 
-### GitHub Pages
-1. Create a GitHub repository and upload these files.
-2. In repository **Settings > Pages**, select **Deploy from a branch** and choose `main` / `/root`.
-3. GitHub will provide your public URL.
+Simply open `index.html` in any modern web browser or serve via a local static server:
 
-### Netlify
-Drag this folder onto [Netlify Drop](https://app.netlify.com/drop). Netlify will publish the site and provide a free URL.
+```bash
+# Using Python
+python3 -m http.server 8080
+
+# Using Node / npx
+npx serve .
