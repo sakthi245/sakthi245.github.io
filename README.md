@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# sakthi245.github.io
-=======
 # S Sakthi — 3D Interactive Portfolio
 
 High-performance portfolio website for S Sakthi, showcasing AI & Data Science capabilities, data engineering, and modern web development.
@@ -31,4 +28,3 @@ python3 -m http.server 8080
 
 # Using Node / npx
 npx serve .
->>>>>>> 0.2.0
